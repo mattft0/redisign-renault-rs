@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Renault Sport</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel = "icon" href ="img/logo.png" type = "image/x-icon">
+    </head>
+    <body>
+        <div class="header" id="header">
+            <nav>
+                <a href="https://www.renault.fr/">
+                    <img src="img/logo.png" class="logo">
+                </a>
+                <ul>
+                    <li><a href="#" id="cliors">Clio RS</a></li>
+                    <li><a href="#" id="meganers">Megane RS</a></li>
+                    <li><a href="#" id="arkanars">Arkana RS</a></li>
+                    <li><a href="#" id="capturrs">Captur RS</a></li>
+                </ul>
+                <a href="#" class="btn">réserver un essai</a>
+            </nav>
+            <div class="info">
+                <div>
+                    <h2 id="acc">9.4 s</h2>
+                    <p>0 à 100 km/h</p>
+                </div>
+                <div>
+                    <h2 id="maxspeed">205 kmh</h2>
+                    <p>Vitesse maximale</p>
+                </div>
+                <div class="line">
+                </div>
+                <div>
+                    <h2 id="model">Clio RS</h2>
+                </div>
+            </div>
+        </div>
+
+    <script>
+        var header = document.getElementById("header");
+        var clio = document.getElementById("cliors")
+        var megane = document.getElementById("meganers")
+        var arkana = document.getElementById("arkanars")
+        var captur = document.getElementById("capturrs")
+        var model = document.getElementById("model")
+        var maxspeed = document.getElementById("maxspeed")
+        var acc = document.getElementById("acc")
+
+        clio.onclick = function(){
+            header.style.backgroundImage = "url(img/clio.png)";
+            model.innerHTML = "Clio RS";
+            maxspeed.innerHTML = "205 kmh";
+            acc.innerHTML = "9.4 s";
+        }
+
+        megane.onclick = function(){
+            header.style.backgroundImage = "url(img/megane.jpg)";
+            model.innerHTML = "Megane RS";
+            maxspeed.innerHTML = "255 kmh";
+            acc.innerHTML = "5.7 s";
+        }
+
+        arkana.onclick = function(){
+            header.style.backgroundImage = "url(img/arkana.png)";
+            model.innerHTML = "Arkana RS";
+            maxspeed.innerHTML = "205 kmh";
+            acc.innerHTML = "9.1 s";
+        }
+
+        captur.onclick = function(){
+            header.style.backgroundImage = "url(img/captur.png)";
+            model.innerHTML = "Captur RS";
+            maxspeed.innerHTML = "204 kmh";
+            acc.innerHTML = "8.5 s";
+        }
+    </script>
+
+    </body>
+</html>
